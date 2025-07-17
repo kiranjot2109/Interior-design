@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5822A32F-F90E-4537-92A4-4B65712987A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InteriorDesigns</RootNamespace>
+    <AssemblyName>InteriorDesigns</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminform.Designer.cs">
+      <DependentUpon>adminform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clocks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clocks.Designer.cs">
+      <DependentUpon>clocks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="confirmorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="confirmorder.Designer.cs">
+      <DependentUpon>confirmorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lamps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lamps.Designer.cs">
+      <DependentUpon>lamps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="metaldecor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="metaldecor.Designer.cs">
+      <DependentUpon>metaldecor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mirror.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mirror.Designer.cs">
+      <DependentUpon>mirror.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orderplaced.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orderplaced.Designer.cs">
+      <DependentUpon>orderplaced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paintings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paintings.Designer.cs">
+      <DependentUpon>paintings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="plant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="plant.Designer.cs">
+      <DependentUpon>plant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="product.Designer.cs">
+      <DependentUpon>product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="shelves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shelves.Designer.cs">
+      <DependentUpon>shelves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vases.Designer.cs">
+      <DependentUpon>vases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewusers.Designer.cs">
+      <DependentUpon>viewusers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminform.resx">
+      <DependentUpon>adminform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clocks.resx">
+      <DependentUpon>clocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="confirmorder.resx">
+      <DependentUpon>confirmorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lamps.resx">
+      <DependentUpon>lamps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="metaldecor.resx">
+      <DependentUpon>metaldecor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mirror.resx">
+      <DependentUpon>mirror.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderplaced.resx">
+      <DependentUpon>orderplaced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paintings.resx">
+      <DependentUpon>paintings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="plant.resx">
+      <DependentUpon>plant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="product.resx">
+      <DependentUpon>product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="shelves.resx">
+      <DependentUpon>shelves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vases.resx">
+      <DependentUpon>vases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewusers.resx">
+      <DependentUpon>viewusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="dbaseDataSet.xsc">
+      <DependentUpon>dbaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbaseDataSet.xss">
+      <DependentUpon>dbaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbaseDataSet1.xsc">
+      <DependentUpon>dbaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbaseDataSet1.xss">
+      <DependentUpon>dbaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbaseDataSet2.xsc">
+      <DependentUpon>dbaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dbaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbaseDataSet2.xss">
+      <DependentUpon>dbaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pp1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pp2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pp4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pp5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pp6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pp7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pp8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pp9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wm2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wm4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wm5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wm6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wm8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wm9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wm10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whitestrip.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbase_log.LDF">
+      <DependentUpon>dbase.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\pro3.jpg" />
+    <None Include="Resources\pro2.jpg" />
+    <None Include="Resources\pro1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
