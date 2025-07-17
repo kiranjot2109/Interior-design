@@ -1,1 +1,3 @@
-# Interior-design
+The project aims is to design a website for Interior Design websites. This website will feature a modern, user-friendly design that allows customers to easily browse the Interior Designs. 
+This website shows the services and also the cost of the design and the goal is to create a delightful online experience that encourages the reader to create a blog and share their experience.
+The scope of Interior designing is vast across various industries in India, including Residential design: Creating beautiful, functional living spaces for homes, apartments, and villas.       Commercial design: Planning and designing offices, restaurants, hotels, shopping centers, and other business establishments.
